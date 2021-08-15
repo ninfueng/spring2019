@@ -2,23 +2,18 @@
 #include <iostream>
 #include <cstdlib>
 
-class Foo
-{
+class Foo {
 public:
-    Foo()
-    {
+    Foo() {
         std::cout << "Constructed Foo object: " << this << std::endl;
     }
-
-    ~Foo()
-    {
+    ~Foo() {
         std::cout << "Destroying Foo object: " << this << std::endl;
     }
 };
 
 
-int main()
-{
+int main() {
     // use malloc to allocate, and then use free() to free it
     // what do you notice?
     std::cout << "===== malloc ====="  << std::endl;
